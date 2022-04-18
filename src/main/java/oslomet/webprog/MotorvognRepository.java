@@ -39,7 +39,7 @@ public class MotorvognRepository {
          db.update(sql,m.getPersonnr(),m.getNavn(),m.getAdresse(),m.getKjennetegn(),m.getMerke(),m.getType(),m.getId());
      }
 
-     public void slettEnMotorvogn(int personnr) {
+     public void slettEnMotorvogn(long personnr) {
         String sql = "DELETE FROM Motorvogn WHERE personnr=?";
         db.update(sql,personnr);
     }

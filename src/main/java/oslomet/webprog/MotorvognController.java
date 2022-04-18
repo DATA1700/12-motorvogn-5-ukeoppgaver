@@ -40,7 +40,7 @@ public class MotorvognController {
     }
 
     @GetMapping("/slettEnMotorvogn")
-    public void slettEnMotorvogn(int personnr){
+    public void slettEnMotorvogn(long personnr){
         rep.slettEnMotorvogn(personnr);
     }
 
